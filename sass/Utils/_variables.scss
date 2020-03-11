@@ -1,0 +1,14 @@
+//--------Feuille de style OHMYFOOD---------//
+
+//-----couleurs de base-----//
+
+$green:#579c87ff;
+$yellow:#fdcb46ff;
+
+
+//---- Mixin----//
+
+@mixin basic_color {
+    background:$green;
+    color:$yellow;
+}

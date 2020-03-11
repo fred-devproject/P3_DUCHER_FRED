@@ -1,0 +1,82 @@
+//-------------Feuille de style OH MY FOOD---------------//
+//---------------Methodologie BEM et Sass----------------//
+//--------Couleurs de base - vert:#579c87ff--------------//
+//------------------------ - jaune:#fdcb46ff-------------//
+//-------------------Mobile_first------------------------//
+
+@import "./utils/variables";
+
+body {
+    margin: 0px;
+}
+.head {
+   @include basic_color;
+   width: 100%;
+   height: 15%;
+   display: flex;
+   justify-content: center;
+   &__text {
+    @include basic_color;
+    vertical-align: middle;
+    }
+}
+
+.foot {
+    @include basic_color;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    padding: 5px;
+    margin-top: 15px;
+    &__text {
+    @include basic_color;
+    vertical-align: middle;
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    }    
+}
+
+.prochainement {
+    @include basic_color;
+    border-radius: 3px;
+    width: 30%;
+    height: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    margin:auto;
+
+}
+.menublock {
+    display:flex;
+    flex-direction: column;
+}
+.menu {
+    box-shadow: 2px 2px 2px grey;
+    width: 70%;
+    height:20em;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    &__note {
+        height:100%;
+        margin:auto;
+        background: #fcdfdb;
+        text-decoration: none;
+        color:#3d1319;
+        img {
+            width: 30%;
+            height: auto;
+            margin-top: 2rem;
+        }
+        a {
+            color: #3d1319;
+            text-decoration: none;
+        }
+        a:active {
+            color: #3d1319;
+        }
+    }
+}
