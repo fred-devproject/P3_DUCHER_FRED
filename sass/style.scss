@@ -18,15 +18,19 @@ body {
    &__text {
     @include basic_color;
     vertical-align: middle;
+    text-decoration: none;
     }
 }
 
 .foot {
     @include basic_color;
     display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
     justify-content: space-between;
     width: 100%;
-    height: 15%;
+    height: 3em;
     padding: 5px;
     margin-top: 15px;
     &__text {
@@ -41,42 +45,108 @@ body {
     @include basic_color;
     border-radius: 3px;
     width: 30%;
-    height: 2rem;
+    height: 2em;
     text-align: center;
-    vertical-align: middle;
-    margin:auto;
-
+    margin:0px auto 70px auto;
 }
 .menublock {
     display:flex;
     flex-direction: column;
 }
 .menu {
-    box-shadow: 2px 2px 2px grey;
-    width: 70%;
-    height:20em;
+    box-shadow: 2px 1px 1px #a7ac93;
+    border-radius: 5px;
+    border: #a7ac93 solid 1px;
+    width: 80%;
+    height:28em;
     margin-top: 2rem;
     margin-bottom:2rem;
     margin-left: auto;
     margin-right: auto;
     text-align:center;
     &__note {
+        font-family: Devonshire, cursive;
+        border-radius: 5px;
         height:100%;
         margin:auto;
         background: #fcdfdb;
-        text-decoration: none;
-        color:#3d1319;
+        h3 {
+            @include color_note;
+        }
+        h2 {
+            @include color_note;
+            font-family: tillana,cursive;
+            font-size: 2em;
+        }
         img {
-            width: 30%;
+            width: 25%;
             height: auto;
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
         a {
-            color: #3d1319;
             text-decoration: none;
         }
-        a:active {
-            color: #3d1319;
+    }
+    &__chic {
+        font-family: Croissant One;
+        border-radius: 5px;
+        height:100%;
+        margin:auto;
+        background: #fff5fe;
+        position: relative;
+        h3 {
+            @include gradient_chic;
         }
+        h2 {
+            @include gradient_chic;
+            font-family: tillana,cursive;
+            font-size: 2em;
+        
+        }
+        a {
+            @include a_position;
+        }
+        
+    }
+    &__delice {
+        font-family: parisienne;
+        border-radius: 5px;
+        height:100%;
+        margin:auto;
+        background: whitesmoke;
+        position: relative;
+        h3 {
+            @include gradient_delice;
+            margin-top: 0;
+        }
+        h2 {
+            @include gradient_delice;
+            font-family: tillana,cursive;
+            font-size: 2em;
+        }
+        a {
+            @include a_position;
+        }
+    }
+    &__palette {
+        font-family: Kaushan script;
+        border-radius: 5px;
+        height:100%;
+        margin:auto;
+        background: whitesmoke;
+        position: relative;
+        h3 {
+            @include gradient_palette;
+            margin-top:0;
+        }
+        h2 {
+            @include gradient_palette;
+            font-family: tillana,cursive;
+            font: size 2em;
+        }
+        a {
+            @include a_position;
+        }
+
     }
 }
