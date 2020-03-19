@@ -9,11 +9,12 @@ body {
   height: 15%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .head__text {
   background: #579c87ff;
   color: #fdcb46ff;
-  vertical-align: middle;
+  font-family: roboto;
   text-decoration: none;
 }
 
@@ -22,30 +23,43 @@ body {
   color: #fdcb46ff;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   position: fixed;
   bottom: 0;
   justify-content: space-between;
   width: 100%;
   height: 3em;
-  padding: 5px;
-  margin-top: 15px;
+  padding: 0px;
+  margin-top: 10px;
 }
 .foot__text {
   background: #579c87ff;
   color: #fdcb46ff;
-  vertical-align: middle;
-  display: inline;
-  padding: 10px 10px 10px 10px;
+  font-family: roboto;
+  font-size: 18px;
+  padding: 0px 20px 0px 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .prochainement {
   background: #579c87ff;
   color: #fdcb46ff;
-  border-radius: 3px;
-  width: 30%;
-  height: 2em;
+  font-family: roboto;
+  border-radius: 5px;
+  width: 60%;
+  height: 2.5em;
   text-align: center;
   margin: 0px auto 70px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prochainement span {
+  margin-top: 0px;
+  font-size: 20px;
 }
 
 .menublock {
@@ -73,12 +87,11 @@ body {
   background: #fcdfdb;
 }
 .menu__note h3 {
-  font-size: 1.5rem;
   font-weight: 300;
   color: #3d1319;
+  font-size: 24px;
 }
 .menu__note h2 {
-  font-size: 1.5rem;
   font-weight: 300;
   color: #3d1319;
   font-family: tillana, cursive;
@@ -91,6 +104,9 @@ body {
 }
 .menu__note a {
   text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .menu__chic {
   font-family: Croissant One;
@@ -101,29 +117,33 @@ body {
   position: relative;
 }
 .menu__chic h3 {
-  font-size: 1.125rem;
   color: #c77529;
   background: gradient(linear, left top, right top, from(#c77529), to(#6a56a5));
   background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
   background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 7em;
+  font-size: 24px;
 }
 .menu__chic h2 {
-  font-size: 1.125rem;
   color: #c77529;
   background: gradient(linear, left top, right top, from(#c77529), to(#6a56a5));
   background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
   background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: tillana, cursive;
   font-size: 2em;
 }
 .menu__chic a {
+  display: block;
+  height: 100%;
   width: 100%;
   position: absolute;
-  top: 9em;
+  top: 0;
   left: 0;
   text-decoration: none;
 }
@@ -136,30 +156,33 @@ body {
   position: relative;
 }
 .menu__delice h3 {
-  font-size: 1.5em;
   color: #3a4fa2;
   background: gradient(linear, left top, right top, from(#3a4fa2), to(#4e96d1));
   background: -o-linear-gradient(left, #3a4fa2 0%, #4e96d1 100%);
   background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 0;
+  margin-top: 7em;
+  font-size: 24px;
 }
 .menu__delice h2 {
-  font-size: 1.5em;
   color: #3a4fa2;
   background: gradient(linear, left top, right top, from(#3a4fa2), to(#4e96d1));
   background: -o-linear-gradient(left, #3a4fa2 0%, #4e96d1 100%);
   background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: tillana, cursive;
   font-size: 2em;
 }
 .menu__delice a {
+  display: block;
+  height: 100%;
   width: 100%;
   position: absolute;
-  top: 9em;
+  top: 0;
   left: 0;
   text-decoration: none;
 }
@@ -176,26 +199,194 @@ body {
   background: gradient(linear, left top, right top, from(#57a746), to(#c2db76));
   background: -o-linear-gradient(left, #57a746 0%, #c2db76 100%);
   background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 0;
+  margin-top: 7em;
+  font-size: 24px;
 }
 .menu__palette h2 {
   color: #57a746;
   background: gradient(linear, left top, right top, from(#57a746), to(#c2db76));
   background: -o-linear-gradient(left, #57a746 0%, #c2db76 100%);
   background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: tillana, cursive;
   font: size 2em;
 }
 .menu__palette a {
+  display: block;
+  height: 100%;
   width: 100%;
   position: absolute;
-  top: 9em;
+  top: 0;
   left: 0;
   text-decoration: none;
+}
+
+.note {
+  box-shadow: 2px 1px 1px #a7ac93;
+  border-radius: 5px;
+  border: #a7ac93 solid 1px;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  color: #3d1319;
+  background: #fcdfdb;
+  font-family: tillana, cursive;
+  font-size: 0.8em;
+}
+.note__title {
+  font-size: 2.5em;
+  font-family: devonshire, cursive;
+  font-weight: 300;
+  margin-top: 0;
+  padding: 15px;
+  text-align: center;
+}
+.note__undertitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+}
+.note__undertitle img {
+  width: 30%;
+  height: 30%;
+}
+.note__imgtop {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.note__dessert {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.note__bottom {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: 300;
+  font-family: devonshire, cursive;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.note ul {
+  list-style: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+}
+.note p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.palette {
+  box-shadow: 2px 1px 1px #a7ac93;
+  border-radius: 5px;
+  border: #a7ac93 solid 1px;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: whitesmoke;
+}
+.palette__title {
+  color: #57a746;
+  background: gradient(linear, left top, right top, from(#57a746), to(#c2db76));
+  background: -o-linear-gradient(left, #57a746 0%, #c2db76 100%);
+  background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Kaushan script;
+  font-size: 2em;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.palette__undertitle {
+  text-align: center;
+}
+.palette ul {
+  list-style: none;
+}
+
+.chic {
+  box-shadow: 2px 1px 1px #a7ac93;
+  border-radius: 5px;
+  border: #a7ac93 solid 1px;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff5fe;
+}
+.chic__title {
+  color: #c77529;
+  background: gradient(linear, left top, right top, from(#c77529), to(#6a56a5));
+  background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
+  background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Croissant One;
+  font-size: 1.6em;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.chic__undertitle {
+  text-align: center;
+}
+.chic ul {
+  list-style: none;
+}
+
+.delice {
+  box-shadow: 2px 1px 1px #a7ac93;
+  border-radius: 5px;
+  border: #a7ac93 solid 1px;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: whitesmoke;
+}
+.delice__title {
+  color: #3a4fa2;
+  background: gradient(linear, left top, right top, from(#3a4fa2), to(#4e96d1));
+  background: -o-linear-gradient(left, #3a4fa2 0%, #4e96d1 100%);
+  background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: parisienne;
+  font-size: 2em;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.delice__undertitle {
+  text-align: center;
+}
+.delice ul {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

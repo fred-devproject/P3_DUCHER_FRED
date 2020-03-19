@@ -13,25 +13,24 @@ $yellow:#fdcb46ff;
     color:$yellow;
 }
 @mixin color_note {
-    font-size: 1.5rem;
     font-weight: 300;
     color: #3d1319;
 }
 @mixin gradient_chic {
-    font-size: 1.125rem;
     color: #c77529;
     background: gradient(linear, left top, right top, from(#c77529), to(#6a56a5));
     background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
     background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @mixin gradient_delice {
-    font-size: 1.5em;
     color: #3a4fa2;
     background: gradient(linear, left top, right top, from(#3a4fa2), to(#4e96d1));
     background: -o-linear-gradient(left, #3a4fa2 0%, #4e96d1 100%);
     background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -40,13 +39,26 @@ $yellow:#fdcb46ff;
     background: gradient(linear, left top, right top, from(#57a746), to(#c2db76));
     background: -o-linear-gradient(left, #57a746 0%, #c2db76 100%);
     background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @mixin a_position {
+    display: block;
+    height:100%;
     width: 100%;
     position:absolute;
-    top: 9em;
+    top: 0;
     left: 0;
     text-decoration: none;
+}
+@mixin card {
+    box-shadow: 2px 1px 1px #a7ac93;
+    border-radius: 5px;
+    border: #a7ac93 solid 1px;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }

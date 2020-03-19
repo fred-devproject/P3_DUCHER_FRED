@@ -7,146 +7,273 @@
 @import "./utils/variables";
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 .head {
-   @include basic_color;
-   width: 100%;
-   height: 15%;
-   display: flex;
-   justify-content: center;
-   &__text {
+  @include basic_color;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
     @include basic_color;
-    vertical-align: middle;
+    font-family: roboto;
     text-decoration: none;
-    }
+  }
 }
-
 .foot {
+  @include basic_color;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  width: 100%;
+  height: 3em;
+  padding: 5px;
+  margin-top: 10px;
+  &__text {
     @include basic_color;
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 0;
-    justify-content: space-between;
-    width: 100%;
-    height: 3em;
-    padding: 5px;
-    margin-top: 15px;
-    &__text {
-    @include basic_color;
-    vertical-align: middle;
-    display: inline;
-    padding: 10px 10px 10px 10px;
-    }    
+    font-family: roboto;
+    font-size: 18px;
+    padding: 0px 20px 0px 20px;
+    margin-top: 10px;
+  }
 }
-
+a {
+  text-decoration: none;
+}
 .prochainement {
-    @include basic_color;
-    border-radius: 3px;
-    width: 30%;
-    height: 2em;
-    text-align: center;
-    margin:0px auto 70px auto;
+  @include basic_color;
+  font-family: roboto;
+  border-radius: 5px;
+  width: 60%;
+  height: 2.5em;
+  text-align: center;
+  margin: 0px auto 70px auto;
+  display: flex;
+  justify-content: center;
+  span {
+    margin-top:5px;
+    font-size: 20px;
+  }
 }
 .menublock {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .menu {
-    box-shadow: 2px 1px 1px #a7ac93;
+  box-shadow: 2px 1px 1px #a7ac93;
+  border-radius: 5px;
+  border: #a7ac93 solid 1px;
+  width: 80%;
+  height: 28em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  &__note {
+    font-family: Devonshire, cursive;
     border-radius: 5px;
-    border: #a7ac93 solid 1px;
-    width: 80%;
-    height:28em;
-    margin-top: 2rem;
-    margin-bottom:2rem;
+    height: 100%;
+    margin: auto;
+    background: #fcdfdb;
+    h3 {
+      @include color_note;
+      font-size: 24px;
+    }
+    h2 {
+      @include color_note;
+      font-family: tillana, cursive;
+      font-size: 2em;
+    }
+    img {
+      width: 25%;
+      height: auto;
+      margin-top: 4rem;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height:100%;
+    }
+  }
+  &__chic {
+    font-family: Croissant One;
+    border-radius: 5px;
+    height: 100%;
+    margin: auto;
+    background: #fff5fe;
+    position: relative;
+    h3 {
+      @include gradient_chic;
+      margin-top: 7em;
+      font-size: 24px;
+    }
+    h2 {
+      @include gradient_chic;
+      font-family: tillana, cursive;
+      font-size: 2em;
+    }
+    a {
+      @include a_position;
+    }
+  }
+  &__delice {
+    font-family: parisienne;
+    border-radius: 5px;
+    height: 100%;
+    margin: auto;
+    background: whitesmoke;
+    position: relative;
+    h3 {
+      @include gradient_delice;
+      margin-top: 7em;
+      font-size: 24px;
+    }
+    h2 {
+      @include gradient_delice;
+      font-family: tillana, cursive;
+      font-size: 2em;
+    }
+    a {
+      @include a_position;
+    }
+  }
+  &__palette {
+    font-family: Kaushan script;
+    border-radius: 5px;
+    height: 100%;
+    margin: auto;
+    background: whitesmoke;
+    position: relative;
+    h3 {
+      @include gradient_palette;
+      margin-top:7em;
+      font-size: 24px;
+    }
+    h2 {
+      @include gradient_palette;
+      font-family: tillana, cursive;
+      font: size 2em;
+    }
+    a {
+      @include a_position;
+    }
+  }
+}
+.note {
+  @include card;
+  @include color_note;
+  background:#fcdfdb ;
+  font-family: tillana, cursive;
+  font-size: 0.8em;
+  &__title {
+    font-size: 2.5em;
+    font-family: devonshire,cursive;
+    font-weight: 300;
+    margin-top: 0;
+    padding:15px;
+    text-align: center;
+  }
+  &__undertitle {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    font-size: 1.2em;
+    img {
+      width: 30%;
+      height: 30%;
+    }
+  }
+  &__imgtop {
+    width: 20%;
+    height: auto;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
+  }
+  &__dessert {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: devonshire, cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 0px;
+  }
+  p {
+    font-style: italic;
+    font-weight:bold;
+  }
+}
+.palette {
+  @include card;
+  background:whitesmoke ;
+  &__title {
+    @include gradient_palette;
+    font-family: Kaushan script;
+    font-size: 2em;
+    margin-top: 0;
+    padding-bottom:10px;
+    text-align: center;
+    }
+  &__undertitle {
     text-align:center;
-    &__note {
-        font-family: Devonshire, cursive;
-        border-radius: 5px;
-        height:100%;
-        margin:auto;
-        background: #fcdfdb;
-        h3 {
-            @include color_note;
-        }
-        h2 {
-            @include color_note;
-            font-family: tillana,cursive;
-            font-size: 2em;
-        }
-        img {
-            width: 25%;
-            height: auto;
-            margin-top: 4rem;
-        }
-        a {
-            text-decoration: none;
-        }
     }
-    &__chic {
-        font-family: Croissant One;
-        border-radius: 5px;
-        height:100%;
-        margin:auto;
-        background: #fff5fe;
-        position: relative;
-        h3 {
-            @include gradient_chic;
-        }
-        h2 {
-            @include gradient_chic;
-            font-family: tillana,cursive;
-            font-size: 2em;
-        
-        }
-        a {
-            @include a_position;
-        }
-        
-    }
-    &__delice {
-        font-family: parisienne;
-        border-radius: 5px;
-        height:100%;
-        margin:auto;
-        background: whitesmoke;
-        position: relative;
-        h3 {
-            @include gradient_delice;
-            margin-top: 0;
-        }
-        h2 {
-            @include gradient_delice;
-            font-family: tillana,cursive;
-            font-size: 2em;
-        }
-        a {
-            @include a_position;
-        }
-    }
-    &__palette {
-        font-family: Kaushan script;
-        border-radius: 5px;
-        height:100%;
-        margin:auto;
-        background: whitesmoke;
-        position: relative;
-        h3 {
-            @include gradient_palette;
-            margin-top:0;
-        }
-        h2 {
-            @include gradient_palette;
-            font-family: tillana,cursive;
-            font: size 2em;
-        }
-        a {
-            @include a_position;
-        }
-
-    }
+  ul {
+    list-style: none;
+  }
+}
+.chic {
+  @include card;
+  background:#fff5fe ;
+  &__title {
+    @include gradient_chic;
+    font-family: Croissant One;
+    font-size: 1.6em;
+    margin-top: 0;
+    padding-bottom:10px;
+    text-align: center;
+  }
+  &__undertitle {
+    text-align:center;
+  }
+  ul {
+    list-style: none;
+  }
+}
+.delice {
+  @include card;
+  background:whitesmoke ;
+  &__title {
+    @include gradient_delice;
+    font-family: parisienne;
+    font-size: 2em;
+    margin-top: 0;
+    padding-bottom:10px;
+    text-align: center;
+  }
+  &__undertitle {
+    text-align:center;
+  }
+  ul {
+    list-style: none;
+  }
 }

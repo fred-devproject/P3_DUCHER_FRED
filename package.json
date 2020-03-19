@@ -17,5 +17,8 @@
     "url": "https://github.com/fred-devproject/P3_DUCHER_FRED/issues"
   },
   "homepage": "https://github.com/fred-devproject/P3_DUCHER_FRED#readme",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "prettier": "^1.19.1"
+  }
 }
