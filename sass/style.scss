@@ -8,6 +8,12 @@
 
 body {
   margin: 0px;
+  @include responsive("tablet") {
+    background-color: blueviolet;
+  }
+  @include responsive("desktop") {
+    background-color: chocolate;
+}
 }
 .head {
   @include basic_color;
@@ -21,24 +27,41 @@ body {
     font-family: roboto;
     text-decoration: none;
   }
+  a:hover {
+    background: darken($yellow, 2%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @include responsive("tablet"){
+    &__text {
+      @include basic_color;
+      font-family: roboto;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+  }
 }
 .foot {
   @include basic_color;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   position: fixed;
   bottom: 0;
   justify-content: space-between;
   width: 100%;
   height: 3em;
-  padding: 5px;
   margin-top: 10px;
   &__text {
     @include basic_color;
     font-family: roboto;
-    font-size: 18px;
-    padding: 0px 20px 0px 20px;
-    margin-top: 10px;
+    font-size: 1em;
+    padding: 0em 1em 0em 1em;
+    @include responsive("tablet"){
+      font-size: 1.2em;
+      padding: 0em 2em 0em 2em;
+    }
   }
 }
 a {
@@ -50,36 +73,47 @@ a {
   border-radius: 5px;
   width: 60%;
   height: 2.5em;
-  text-align: center;
   margin: 0px auto 70px auto;
   display: flex;
+  align-items: center;
   justify-content: center;
+  @include responsive("tablet"){
+    width:50%;
+  }
   span {
-    margin-top:5px;
-    font-size: 20px;
+    font-size: 1em;
   }
 }
 .menublock {
   display: flex;
   flex-direction: column;
+  @include responsive("tablet"){
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+
 }
 .menu {
-  box-shadow: 2px 1px 1px #a7ac93;
+  box-shadow: 0px 0px 8px 1px rgb(162, 165, 164);
   border-radius: 5px;
-  border: #a7ac93 solid 1px;
   width: 80%;
-  height: 28em;
+  height: 30em;
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  @include responsive("tablet"){
+    height:20em;
+  }
   &__note {
     font-family: Devonshire, cursive;
     border-radius: 5px;
     height: 100%;
     margin: auto;
-    background: #fcdfdb;
+    background: #f8e5e1;
+    align-items: center;
     h3 {
       @include color_note;
       font-size: 24px;
@@ -87,12 +121,12 @@ a {
     h2 {
       @include color_note;
       font-family: tillana, cursive;
-      font-size: 2em;
+      font-size: 30px;
     }
     img {
-      width: 25%;
+      width: 20%;
       height: auto;
-      margin-top: 4rem;
+      margin-top: 5rem;
     }
     a {
       text-decoration: none;
@@ -110,13 +144,13 @@ a {
     position: relative;
     h3 {
       @include gradient_chic;
-      margin-top: 7em;
-      font-size: 24px;
+      font-size: 20px;
+      margin-top: 8em;
     }
     h2 {
       @include gradient_chic;
       font-family: tillana, cursive;
-      font-size: 2em;
+      font-size: 30px;
     }
     a {
       @include a_position;
@@ -127,17 +161,17 @@ a {
     border-radius: 5px;
     height: 100%;
     margin: auto;
-    background: whitesmoke;
+    background: #edefef;
     position: relative;
     h3 {
       @include gradient_delice;
-      margin-top: 7em;
       font-size: 24px;
+      margin-top:7em;
     }
     h2 {
       @include gradient_delice;
       font-family: tillana, cursive;
-      font-size: 2em;
+      font-size: 30px;
     }
     a {
       @include a_position;
@@ -148,17 +182,17 @@ a {
     border-radius: 5px;
     height: 100%;
     margin: auto;
-    background: whitesmoke;
+    background: #fdfffd;
     position: relative;
     h3 {
       @include gradient_palette;
-      margin-top:7em;
       font-size: 24px;
+      margin-top:7em;
     }
     h2 {
       @include gradient_palette;
       font-family: tillana, cursive;
-      font: size 2em;
+      font-size: 30px;
     }
     a {
       @include a_position;
@@ -168,7 +202,7 @@ a {
 .note {
   @include card;
   @include color_note;
-  background:#fcdfdb ;
+  background:#f8e5e1;
   font-family: tillana, cursive;
   font-size: 0.8em;
   &__title {
@@ -180,14 +214,10 @@ a {
     text-align: center;
   }
   &__undertitle {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align:center;
-    font-size: 1.2em;
+    @include undertitle;
+    font-size: 1.1em;
     img {
       width: 30%;
-      height: 30%;
     }
   }
   &__imgtop {
@@ -198,82 +228,125 @@ a {
     margin-right: auto;
     margin-top: 15px;
   }
-  &__dessert {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
   &__bottom {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 2em;
     font-weight: 300;
     font-family: devonshire, cursive;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
   ul {
-    list-style: none;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-left: 0px;
+    @include list_style;
   }
-  p {
-    font-style: italic;
-    font-weight:bold;
+  &__price {
+    @include price_style;
   }
+  
 }
 .palette {
   @include card;
-  background:whitesmoke ;
+  background:#fdfffd;
+  font-family: tillana, cursive;
+  font-size: 0.8em;
   &__title {
     @include gradient_palette;
     font-family: Kaushan script;
     font-size: 2em;
-    margin-top: 0;
-    padding-bottom:10px;
     text-align: center;
     }
   &__undertitle {
-    text-align:center;
+    @include undertitle;
+    font-family: tillana, cursive;
+    font-size: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    } 
+  img {
+    width: 30%;
     }
   ul {
-    list-style: none;
+    @include list_style;
+  }
+  &__price {
+    @include price_style;
   }
 }
 .chic {
   @include card;
-  background:#fff5fe ;
+  background:#fff5fe;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8em;
   &__title {
     @include gradient_chic;
     font-family: Croissant One;
-    font-size: 1.6em;
-    margin-top: 0;
-    padding-bottom:10px;
+    font-size: 1.8em;
     text-align: center;
   }
-  &__undertitle {
-    text-align:center;
+  &__undertitlestart {
+    color:#c77529;
+    @include undertitle;
+    font-size:1em;
+    margin-right: 0.5em;
+    margin-left:0.5em;
   }
-  ul {
-    list-style: none;
+  &__undertitlemain {
+    color:#a56799;
+    @include undertitle;
+    font-size:1em;
+    margin-right: 0.5em;
+    margin-left:0.5em;
   }
+  &__undertitledessert {
+    color:#6e4ccc;
+    @include undertitle;
+    font-size:1em;
+    margin-right: 0.5em;
+    margin-left:0.5em;
+  }
+  img {
+    width: 30%;
+    }
+  &__starter{
+    @include list_style;
+    color: #c77529;
+    }
+  &__maincourse{
+    @include list_style;
+    color: #a56799;
+    }
+  &__dessert{
+    @include list_style;
+    color: #6e4CCC;
+    } 
+  &__price {
+    @include price_style;
+  } 
 }
 .delice {
   @include card;
-  background:whitesmoke ;
+  background:#edefef;font-family: tillana, cursive;
+  font-size: 0.8em;
   &__title {
     @include gradient_delice;
     font-family: parisienne;
     font-size: 2em;
-    margin-top: 0;
-    padding-bottom:10px;
     text-align: center;
   }
   &__undertitle {
-    text-align:center;
+    font-family: tillana, cursive;
+    @include undertitle;
+    font-size: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  } 
+  img {
+    width: 30%;
   }
   ul {
-    list-style: none;
+    @include list_style;
+    }
+  &__price {
+    @include price_style;
   }
 }
