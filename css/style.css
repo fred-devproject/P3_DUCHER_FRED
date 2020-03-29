@@ -62,8 +62,6 @@ body {
 }
 @media screen and (min-width: 480px) {
   .head__text {
-    background: #579c87ff;
-    color: #fdcb46ff;
     font-family: roboto;
     text-decoration: none;
     font-size: 1.5em;
@@ -71,8 +69,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .head__text {
-    background: #579c87ff;
-    color: #fdcb46ff;
     font-family: roboto;
     text-decoration: none;
     font-size: 1.8em;
@@ -80,8 +76,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .head__text {
-    background: #579c87ff;
-    color: #fdcb46ff;
     font-family: roboto;
     text-decoration: none;
     font-size: 1.8em;
@@ -1144,15 +1138,17 @@ a {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 1200px) {
-  .delice .plat {
+  .plat {
     display: inline-block;
     width: 93%;
     text-align: left;
     padding: 0.3em 0em 0.3em 0em;
   }
 }
-.delice .price {
+
+.price {
   font-size: 1em;
   font-weight: bold;
   font-style: normal;
@@ -1160,7 +1156,7 @@ a {
   margin-bottom: 0.5em;
 }
 @media screen and (min-width: 1200px) {
-  .delice .price {
+  .price {
     display: inline-block;
     margin: 0;
     text-align: right;

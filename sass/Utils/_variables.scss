@@ -11,8 +11,8 @@ $breakpoints: (
     "medium":768px,
     "large":1200px,
 );
-@mixin responsive($_key) {
-    @media screen and (min-width: map-get($breakpoints, $_key)) {
+@mixin responsive($_size) {
+    @media screen and (min-width: map-get($breakpoints, $_size)) {
         &{ @content; }
     }
 }

@@ -33,32 +33,23 @@ body {
     transition: transform 300ms ease-in-out;
     &:hover{
       transform:scale(1.05);
-  }
+    }
   }
   &__text {
     @include basic_color;
     font-family: roboto;
     text-decoration: none;
-  }
-  @include responsive("small"){
-    &__text {
-      @include basic_color;
+    @include responsive("small"){
       font-family: roboto;
       text-decoration: none;
       font-size: 1.5em;
     }
-  }
-  @include responsive("medium"){
-    &__text {
-      @include basic_color;
+    @include responsive("medium"){
       font-family: roboto;
       text-decoration: none;
       font-size: 1.8em;
     }
-  }
-  @include responsive("large"){
-    &__text {
-      @include basic_color;
+    @include responsive("large"){
       font-family: roboto;
       text-decoration: none;
       font-size: 1.8em;
@@ -663,10 +654,12 @@ a {
     }
   }
 }
+
 .delice {
   @include card;
   background:#edefef;font-family: tillana, cursive;
   font-size: 1em;
+
   &__title {
     @include gradient_delice;
     font-family: parisienne;
@@ -682,6 +675,7 @@ a {
       font-size:3.5em;
     }
   }
+
   &__undertitle {
     font-family: tillana, cursive;
     @include undertitle;
@@ -725,15 +719,15 @@ a {
       flex-wrap: wrap;
     }
   }
-  .plat {
-    @include responsive("large"){
-      @include plat_large;
-    }
+}
+.plat {
+  @include responsive("large"){
+    @include plat_large;
   }
-  .price {
-    @include price_style;
-    @include responsive("large"){
-      @include price_large;
-    }
+}
+.price {
+  @include price_style;
+  @include responsive("large"){
+    @include price_large;
   }
 }
