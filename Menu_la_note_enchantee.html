@@ -1,72 +1,87 @@
+<!--page de menu du restaurant la note enchantée-->
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./css/style.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto%7CCroissant+One%7CDevonshire%7CKaushan+Script%7CParisienne%7CTillana&display=swap" rel="stylesheet"/>
         <link rel="icon" href="./images/favicon.ico" />
         <title>Ohmyfood Menu La note enchantée</title>
-	</head>
+      </head>
     <body>
 
-        <!-- header -->
+        <!--header-->
         <header class="head">
-            <h1><a href="homepage.html" class="head__text">Ohmyfood</a></h1>
+            <h1><a href="index.html" class="head__text">Ohmyfood</a></h1>
         </header>
 
-        <!-- main content -->
+        <!--main content-->
         <main>
+            <!-- en prévision de lien menant directement sur le site du restaurant-->
+            <section class="lien__resto">
+                <h2>La note enchantée</h2>
+            </section>
             <section class="note">
+                <!--nom du restaurant avec effet de style -->
                 <img class="note__imgtop" src="./images/MUSICNOTE.png" alt="Images" />
                 <h2 class="note__title">La note enchantée</h2>
+                <!--sous titres entrées-->
                 <div class="note__undertitle">
                     <img class="note__leftbar" src="./images/bar1_left.png" alt="leftbar" />
-                    <h3 class="note__undertitle">Prélude</h3>
+                    <h3 class="note__undertitle--lined">Prélude</h3>
                     <img class="note__rightbar" src="./images/bar1_right.png" alt="rightbar" />
                 </div>
+                <!--liste des entrées-->
                 <ul class="note__starter">
-                    <li>Ravioles de foie gras accompagnés de leur crème à la truffe</li>
-                    <li class="note__price">98€</li>
-                    <li>Caviar osciètre sur blini à la farine de blé noir</li>
-                    <li class="note__price">115€</li>
-                    <li>Homard et espuma de potiron mariné au zestes d'orange</li>
-                    <li class="note__price">89€</li>
-                    <li>Foie gras de canard cuit entier, confiture de figue et pain toasté</li>
-                    <li class="note__price">105€</li>
+                    <li class="plat">Ravioles de foie gras accompagnés de leur crème à la truffe</li>
+                    <li class="price">98€</li>
+                    <li class="plat">Caviar osciètre sur blini à la farine de blé noir</li>
+                    <li class="price">115€</li>
+                    <li class="plat">Homard et espuma de potiron mariné au zestes d'orange</li>
+                    <li class="price">89€</li>
+                    <li class="plat">Foie gras de canard cuit entier, confiture de figue et pain toasté</li>
+                    <li class="price">105€</li>
                 </ul>
+                <!--sous titres plats principaux-->
                 <div class="note__undertitle">
                     <img class="note__leftbar" src="./images/bar1_left.png" alt="leftbar" />
-                    <h3 class="note__undertitle">Point d'orgue</h3>
+                    <h3 class="note__undertitle--lined">Point d'orgue</h3>
                     <img class="note__rightbar" src="./images/bar1_right.png" alt="rightbar" />
                 </div>
+                <!--liste des plats principaux-->
                 <ul class="note__maincourse">
-                    <li>Noix de coquilles Saint-Jacques sur lit de purée de céleri rave</li>
-                    <li class="note__price">102€</li>
-                    <li>Langoustine poêlé, purée de patate douce</li>
-                    <li class="note__price">205€</li>
-                    <li>Mijoté de queue de boeuf et riz sauvage au zestes de citron</li>
-                    <li class="note__price">169€</li>
+                    <li class="plat">Noix de coquilles Saint-Jacques sur lit de purée de céleri rave</li>
+                    <li class="price">102€</li>
+                    <li class="plat">Langoustine poêlé, purée de patate douce</li>
+                    <li class="price">205€</li>
+                    <li class="plat">Mijoté de queue de boeuf et riz sauvage au zestes de citron</li>
+                    <li class="price">169€</li>
                 </ul>
+                <!--sous titre desserts-->
                 <div class="note__undertitle">
                     <img class="note__leftbar" src="./images/bar1_left.png" alt="leftbar" />
-                    <h3 class="note__undertitle">Mouvement final</h3>
+                    <h3 class="note__undertitle--lined">Mouvement final</h3>
                     <img class="note__rightbar" src="./images/bar1_right.png" alt="rightbar" />
                 </div>
+                <!--liste des desserts-->
                 <ul class="note__dessert">
-                    <li>Macaron noisette et chocolat, glace au caramel brun et sel de guérande</li>
-                    <li class="note__price">42€</li>
-                    <li>Baba au rhum revisité, avec son coulis de citron</li>
-                    <li class="note__price">55€</li>
-                    <li>Tarte au citron meringué destructurée</li>
-                    <li class="note__price">45€</li>
+                    <li class="plat">Macaron noisette et chocolat, glace au caramel brun et sel de guérande</li>
+                    <li class="price">42€</li>
+                    <li class="plat">Baba au rhum revisité, avec son coulis de citron</li>
+                    <li class="price">55€</li>
+                    <li class="plat">Tarte au citron meringué destructurée</li>
+                    <li class="price">45€</li>
                 </ul>
+                <!--nom de restaurant avec icone en bas de page-->
                 <div class="note__bottom"><img src="./images/MUSICNOTESMALL.png" alt="Images" />La note enchantée</div>
             </section>
         </main>
-        <!-- footer -->
+        <!--footer-->
         <footer class="foot">
+            <!--lien vers les mentions légales-->
             <a href="mention_legales.html" class="foot__text">Mentions légales</a>
+            <!--contact mail-->
             <a href="mailto:contact@ohmyfood.com" class="foot__text">Contactez nous</a>
         </footer>
     </body>
