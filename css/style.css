@@ -1,3 +1,11 @@
+@keyframes jumpdot {
+  0% {
+    transform: translateY(0.3em);
+  }
+  100% {
+    transform: translateY(-0.3em);
+  }
+}
 @keyframes wiggle {
   0% {
     transform: translate(2px, 0);
@@ -9,23 +17,19 @@
     transform: translate(2px, 0);
   }
 }
-@keyframes jumpdot {
-  0% {
-    transform: translateY(0.3em);
-  }
-  100% {
-    transform: translateY(-0.3em);
-  }
-}
-body {
-  margin: 0px;
-}
-
 .mention {
   width: 60%;
   margin: 4em auto 10em auto;
   font-family: roboto;
   text-align: center;
+}
+
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .head {
@@ -82,24 +86,6 @@ body {
   }
 }
 
-.lien__resto {
-  display: block;
-  text-align: center;
-  font-family: roboto;
-  font-size: 1em;
-  color: #414141;
-}
-@media screen and (min-width: 480px) {
-  .lien__resto {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .lien__resto {
-    font-size: 1.4em;
-  }
-}
-
 .foot {
   background: #579c87ff;
   color: #fdcb46ff;
@@ -145,10 +131,6 @@ body {
   }
 }
 
-a {
-  text-decoration: none;
-}
-
 .prochainement {
   background: #579c87ff;
   color: #fdcb46ff;
@@ -181,33 +163,77 @@ a {
   width: 0.4em;
   height: auto;
   margin-left: 1em;
+  animation-name: jumpdot;
   animation-duration: 900ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   transition-timing-function: ease-in-out;
-  animation-name: jumpdot;
 }
 .prochainement__point2 {
   width: 0.4em;
   height: auto;
   margin-left: 1em;
+  animation-name: jumpdot;
   animation-duration: 900ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   transition-timing-function: ease-in-out;
-  animation-name: jumpdot;
   animation-delay: 300ms;
 }
 .prochainement__point3 {
   width: 0.4em;
   height: auto;
   margin-left: 1em;
+  animation-name: jumpdot;
   animation-duration: 900ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   transition-timing-function: ease-in-out;
-  animation-name: jumpdot;
   animation-delay: 600ms;
+}
+
+.lien__resto {
+  display: block;
+  text-align: center;
+  font-family: roboto;
+  font-size: 1em;
+  color: #414141;
+}
+@media screen and (min-width: 480px) {
+  .lien__resto {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lien__resto {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .plat {
+    display: inline-block;
+    width: 93%;
+    text-align: left;
+    padding: 0.3em 0em 0.3em 0em;
+  }
+}
+
+.price {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+@media screen and (min-width: 1200px) {
+  .price {
+    display: inline-block;
+    margin: 0;
+    text-align: right;
+    width: 7%;
+    padding: 0.3em 0em 0.3em 0em;
+  }
 }
 
 .menublock {
@@ -367,7 +393,6 @@ a {
   text-decoration: none;
   transform: scale(1);
   transition: transform 300ms ease-in-out;
-  opacity: 1;
 }
 .menu__chic a:hover {
   transform: scale(1.1);
@@ -614,30 +639,6 @@ a {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 1200px) {
-  .note .plat {
-    display: inline-block;
-    width: 93%;
-    text-align: left;
-    padding: 0.3em 0em 0.3em 0em;
-  }
-}
-.note .price {
-  font-size: 1em;
-  font-weight: bold;
-  font-style: normal;
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-}
-@media screen and (min-width: 1200px) {
-  .note .price {
-    display: inline-block;
-    margin: 0;
-    text-align: right;
-    width: 7%;
-    padding: 0.3em 0em 0.3em 0em;
-  }
-}
 
 .palette {
   box-shadow: 0px 0px 8px 1px #a2a5a4;
@@ -744,30 +745,6 @@ a {
   .palette ul {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .palette .plat {
-    display: inline-block;
-    width: 93%;
-    text-align: left;
-    padding: 0.3em 0em 0.3em 0em;
-  }
-}
-.palette .price {
-  font-size: 1em;
-  font-weight: bold;
-  font-style: normal;
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-}
-@media screen and (min-width: 1200px) {
-  .palette .price {
-    display: inline-block;
-    margin: 0;
-    text-align: right;
-    width: 7%;
-    padding: 0.3em 0em 0.3em 0em;
   }
 }
 
@@ -987,7 +964,7 @@ a {
   margin-left: 10px;
   padding-left: 0px;
   font-style: italic;
-  color: #6e4CCC;
+  color: #6e4ccc;
 }
 @media screen and (min-width: 480px) {
   .chic__dessert {
@@ -1004,30 +981,6 @@ a {
     font-size: 1.5em;
     display: flex;
     flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .chic .plat {
-    display: inline-block;
-    width: 93%;
-    text-align: left;
-    padding: 0.3em 0em 0.3em 0em;
-  }
-}
-.chic .price {
-  font-size: 1em;
-  font-weight: bold;
-  font-style: normal;
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-}
-@media screen and (min-width: 1200px) {
-  .chic .price {
-    display: inline-block;
-    margin: 0;
-    text-align: right;
-    width: 7%;
-    padding: 0.3em 0em 0.3em 0em;
   }
 }
 
@@ -1136,32 +1089,6 @@ a {
   .delice ul {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .plat {
-    display: inline-block;
-    width: 93%;
-    text-align: left;
-    padding: 0.3em 0em 0.3em 0em;
-  }
-}
-
-.price {
-  font-size: 1em;
-  font-weight: bold;
-  font-style: normal;
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-}
-@media screen and (min-width: 1200px) {
-  .price {
-    display: inline-block;
-    margin: 0;
-    text-align: right;
-    width: 7%;
-    padding: 0.3em 0em 0.3em 0em;
   }
 }
 

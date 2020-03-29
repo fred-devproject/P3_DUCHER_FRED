@@ -1,0 +1,14 @@
+// ohmyfood responsive breakpoint & mixin //
+
+
+//-----Responsive-----//
+$breakpoints: (
+    "small":480px,
+    "medium":768px,
+    "large":1200px,
+);
+@mixin responsive($_size) {
+    @media screen and (min-width: map-get($breakpoints, $_size)) {
+        &{ @content; }
+    }
+}

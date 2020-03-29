@@ -1,0 +1,77 @@
+// La palette du gout menu style //
+
+.palette {
+    @include card;
+        background:$background-pal;
+        font-family: tillana, cursive;
+        font-size: 1em;
+  
+// menu title //
+        &__title {
+        @include gradient_palette;
+            font-family: "Kaushan script";
+            font-size: 2em;
+            text-align: center;
+        @include responsive("small"){
+            font-size:2.5em;
+        }
+        @include responsive("medium"){
+            font-size:3em;
+        }
+        @include responsive("large"){
+            font-size:3.5em;
+        }
+    }
+  
+// menu undertitle //
+    &__undertitle {
+        @include undertitle;
+            font-family: tillana, cursive;
+            font-size: 1em;
+            margin-right: 0.5em;
+            margin-left: 0.5em;
+        @include responsive("medium"){
+            img {
+            width: 30%;
+            }
+        }
+    }
+  
+// menu undertitle effect //
+    &__undertitle--lined {
+        @include lined-palette;
+        @include responsive("small"){
+            font-size: 1.2em;
+        }
+        @include responsive("medium"){
+            font-size: 1.4em;
+        }
+        @include responsive("large"){
+            font-size: 1.7em;
+        }
+    }
+  
+    &__undertitle--lined:hover {
+        background-size: 100% 100%;
+    } 
+  
+    img {
+        width: 25%;
+    }
+  
+// menu list style //
+    ul {
+        @include list_style;
+        @include responsive("small"){
+            @include fontsmall;
+        }
+        @include responsive("medium"){
+            @include fontmid;
+        }
+        @include responsive("large"){
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+  }
+  
