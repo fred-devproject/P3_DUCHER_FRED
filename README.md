@@ -5,6 +5,10 @@ __GOALS__
 * Ensuring the graphic consistency of a website
 * Set up a navigation structure for a website
 ---
+### PRESENTATION DOC.
+
+> Google slide: [Projet 3 Openclassrooms](https://docs.google.com/presentation/d/1Fai3XngpnzcDf0ptImUT21kgWCstaBzcGaqcGL7WB0M/edit?usp=sharing)
+---
 ### ONLINE
 
 > Online version: [OHMYFOOD](http://fred-devproject-p3.s3-website.eu-west-3.amazonaws.com/ )
