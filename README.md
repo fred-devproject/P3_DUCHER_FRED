@@ -33,7 +33,7 @@ __Sass folder content__
         - menu "Lapalette du goût" stylesheet
     - _mentions.scss_
         - mention légales stylesheet
-- __Composants folder__
+- __Components folder__
     - _anime.scss_
         - h1 title grow :hover
         - menu grow and opacity reduce :hover
