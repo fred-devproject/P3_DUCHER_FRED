@@ -1,0 +1,10 @@
+#Exclusion de dossiers github
+
+#ignore folder named "dart-sass"
+/dart-sass
+
+#ignore folder named "node_modules"
+/node_modules
+
+#ignore file named .vscode
+*.vscode
