@@ -1,0 +1,78 @@
+// ohmyfood anime //
+
+
+
+// header grow title effect :hover //
+@mixin grow-title {
+    transform:scale(1);
+    transition: transform 300ms ease-in-out;
+    &:hover{
+      transform:scale(1.05);
+    }
+}
+
+// homepage card grow effect //
+@mixin grow-card {
+    transform:scale(1);
+    transition: transform 300ms ease-in-out;
+    opacity:1;
+      &:hover{
+        transform:scale(1.05);
+        opacity: 0.8;
+      }
+}
+
+// underlined Card undertitle :hover effect //
+@mixin lined-note  {
+    background: linear-gradient(to top,$pal-brown 0%, $pal-brown 5%, transparent 5.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 1000ms;
+}
+@mixin lined-palette  {
+    background: linear-gradient(to top,$pal-green 0%, $pal-green 5%, transparent 5.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 1000ms;
+}
+@mixin lined-start  {
+    background: linear-gradient(to top,$chic-orange 0%,$chic-orange 5%, transparent 5.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 1000ms;
+}
+@mixin lined-main  {
+    background: linear-gradient(to top,$chic-purple 0%,$chic-purple 5%, transparent 5.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 1000ms;
+}
+@mixin lined-dessert  {
+    background: linear-gradient(to top,$chic-blue 0%,$chic-blue 5%, transparent 5.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 1000ms;
+}
+@mixin lined-delice  {
+    background: linear-gradient(to top,$delice-blue 0%,$delice-blue 5%, transparent 5.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 1000ms;
+}
+
+// jumping dot effect on soon element //
+@mixin jump {
+    width: 0.4em;
+    height: auto;
+    margin-left: 1em;
+    animation-name:jumpdot;
+    animation-duration:900ms;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes jumpdot {
+    0% { transform: translateY(0.3em); } 
+    100% { transform: translateY(-0.3em); }
+}
+
+// wiggle effect on footer text //
+@mixin wiggle {
+    animation: wiggle 75ms infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+}

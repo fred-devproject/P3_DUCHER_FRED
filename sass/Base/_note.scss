@@ -1,0 +1,96 @@
+// La note enchantée menu style //
+
+.note {
+    @include card;
+    @include color_note;
+        background:$background-note;
+        font-family: tillana, cursive;
+  
+// menu title //
+        &__title {
+        font-size: 2.5em;
+        font-family: devonshire,cursive;
+        font-weight: 300;
+        text-align: center;
+        @include responsive("small"){
+            font-size:3.5em;
+        }
+        @include responsive("medium"){
+            font-size:3.8em;
+        }
+        @include responsive("large"){
+            font-size:4.5em;
+        }
+    }
+  
+// menu undertitle //
+    &__undertitle {
+        @include undertitle;
+        font-size: 1.2em;
+        img {
+        width: 25%;
+        }
+    }
+  
+// menu undertitle effect //
+    &__undertitle--lined {
+        @include lined-note;
+        @include responsive("small"){
+            font-size: 1.5em;
+        }
+        @include responsive("medium"){
+            font-size: 1.8em;
+        }
+        @include responsive("large"){
+            font-size:2em;
+        }
+    }
+  
+    &__undertitle--lined:hover {
+        background-size: 100% 100%;
+    }
+  
+// music note pics //
+    &__imgtop {
+        width: 15%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vmin;
+    }
+  
+// Pics and text on page bottom //
+    &__bottom {
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-weight: 300;
+        font-family: devonshire, cursive;
+        @include responsive("medium"){
+            font-size: 2.2em;
+            img {
+                width: 1.2em;
+                height: auto;
+            }
+        }
+    }
+  
+// menu list style //
+    ul {
+        @include list_style;
+            font-size: 1em;
+        @include responsive("small"){
+            @include fontsmall;
+        }
+        @include responsive("medium"){
+            @include fontmid;
+        }
+        @include responsive("large"){
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+  }
