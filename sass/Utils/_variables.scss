@@ -5,6 +5,16 @@
 $green:#579c87ff;
 $yellow:#fdcb46ff;
 
+//-----Responsive-----//
+$breakpoints: (
+    "tablet": 499px,
+    "desktop": 1024px,
+);
+@mixin responsive($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
 
 //---- Mixin----//
 
@@ -18,17 +28,13 @@ $yellow:#fdcb46ff;
 }
 @mixin gradient_chic {
     color: #c77529;
-    background: gradient(linear, left top, right top, from(#c77529), to(#6a56a5));
-    background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
-    background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+    background: linear-gradient(to right, #c77529 0%, #6e4ccc 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @mixin gradient_delice {
     color: #3a4fa2;
-    background: gradient(linear, left top, right top, from(#3a4fa2), to(#4e96d1));
-    background: -o-linear-gradient(left, #3a4fa2 0%, #4e96d1 100%);
     background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -36,8 +42,6 @@ $yellow:#fdcb46ff;
 }
 @mixin gradient_palette {
     color: #57a746;
-    background: gradient(linear, left top, right top, from(#57a746), to(#c2db76));
-    background: -o-linear-gradient(left, #57a746 0%, #c2db76 100%);
     background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -53,12 +57,34 @@ $yellow:#fdcb46ff;
     text-decoration: none;
 }
 @mixin card {
-    box-shadow: 2px 1px 1px #a7ac93;
+    box-shadow: 0px 0px 8px 1px rgb(162, 165, 164);
     border-radius: 5px;
-    border: #a7ac93 solid 1px;
     width: 80%;
+    padding: 1em 0em 1em 0em;
     margin-top: 2rem;
     margin-bottom: 5rem;
     margin-left: auto;
     margin-right: auto;
+}
+@mixin undertitle {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+}
+@mixin list_style {
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 0px;
+    font-style: italic;
+    }
+@mixin price_style {
+    font-size: 1em;
+    font-weight:bold;
+    font-style: normal;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+
 }
