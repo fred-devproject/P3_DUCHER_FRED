@@ -1,0 +1,52 @@
+//--------Feuille de style OHMYFOOD---------//
+
+//-----couleurs de base-----//
+
+$green:#579c87ff;
+$yellow:#fdcb46ff;
+
+
+//---- Mixin----//
+
+@mixin basic_color {
+    background:$green;
+    color:$yellow;
+}
+@mixin color_note {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #3d1319;
+}
+@mixin gradient_chic {
+    font-size: 1.125rem;
+    color: #c77529;
+    background: gradient(linear, left top, right top, from(#c77529), to(#6a56a5));
+    background: -o-linear-gradient(left, #c77529 0%, #6a56a5 100%);
+    background: linear-gradient(to right, #c77529 0%, #6a56a5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin gradient_delice {
+    font-size: 1.5em;
+    color: #3a4fa2;
+    background: gradient(linear, left top, right top, from(#3a4fa2), to(#4e96d1));
+    background: -o-linear-gradient(left, #3a4fa2 0%, #4e96d1 100%);
+    background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin gradient_palette {
+    color: #57a746;
+    background: gradient(linear, left top, right top, from(#57a746), to(#c2db76));
+    background: -o-linear-gradient(left, #57a746 0%, #c2db76 100%);
+    background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin a_position {
+    width: 100%;
+    position:absolute;
+    top: 9em;
+    left: 0;
+    text-decoration: none;
+}

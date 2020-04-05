@@ -1,0 +1,21 @@
+{
+  "name": "projet3_encours",
+  "version": "1.0.0",
+  "description": "Projet 3 OPENCLASSROOMS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css",
+    "prefix": "postcss ./PROJET3_ENCOURS/css/style.css --use autoprefixer -d./PROJET3_ENCOURS/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fred-devproject/P3_DUCHER_FRED.git"
+  },
+  "author": "DUCHER FRED",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fred-devproject/P3_DUCHER_FRED/issues"
+  },
+  "homepage": "https://github.com/fred-devproject/P3_DUCHER_FRED#readme",
+  "browserslist": "last 4 versions"
+}

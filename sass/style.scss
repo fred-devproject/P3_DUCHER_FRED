@@ -1,0 +1,152 @@
+//-------------Feuille de style OH MY FOOD---------------//
+//---------------Methodologie BEM et Sass----------------//
+//--------Couleurs de base - vert:#579c87ff--------------//
+//------------------------ - jaune:#fdcb46ff-------------//
+//-------------------Mobile_first------------------------//
+
+@import "./utils/variables";
+
+body {
+    margin: 0px;
+}
+.head {
+   @include basic_color;
+   width: 100%;
+   height: 15%;
+   display: flex;
+   justify-content: center;
+   &__text {
+    @include basic_color;
+    vertical-align: middle;
+    text-decoration: none;
+    }
+}
+
+.foot {
+    @include basic_color;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 3em;
+    padding: 5px;
+    margin-top: 15px;
+    &__text {
+    @include basic_color;
+    vertical-align: middle;
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    }    
+}
+
+.prochainement {
+    @include basic_color;
+    border-radius: 3px;
+    width: 30%;
+    height: 2em;
+    text-align: center;
+    margin:0px auto 70px auto;
+}
+.menublock {
+    display:flex;
+    flex-direction: column;
+}
+.menu {
+    box-shadow: 2px 1px 1px #a7ac93;
+    border-radius: 5px;
+    border: #a7ac93 solid 1px;
+    width: 80%;
+    height:28em;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    &__note {
+        font-family: Devonshire, cursive;
+        border-radius: 5px;
+        height:100%;
+        margin:auto;
+        background: #fcdfdb;
+        h3 {
+            @include color_note;
+        }
+        h2 {
+            @include color_note;
+            font-family: tillana,cursive;
+            font-size: 2em;
+        }
+        img {
+            width: 25%;
+            height: auto;
+            margin-top: 4rem;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    &__chic {
+        font-family: Croissant One;
+        border-radius: 5px;
+        height:100%;
+        margin:auto;
+        background: #fff5fe;
+        position: relative;
+        h3 {
+            @include gradient_chic;
+        }
+        h2 {
+            @include gradient_chic;
+            font-family: tillana,cursive;
+            font-size: 2em;
+        
+        }
+        a {
+            @include a_position;
+        }
+        
+    }
+    &__delice {
+        font-family: parisienne;
+        border-radius: 5px;
+        height:100%;
+        margin:auto;
+        background: whitesmoke;
+        position: relative;
+        h3 {
+            @include gradient_delice;
+            margin-top: 0;
+        }
+        h2 {
+            @include gradient_delice;
+            font-family: tillana,cursive;
+            font-size: 2em;
+        }
+        a {
+            @include a_position;
+        }
+    }
+    &__palette {
+        font-family: Kaushan script;
+        border-radius: 5px;
+        height:100%;
+        margin:auto;
+        background: whitesmoke;
+        position: relative;
+        h3 {
+            @include gradient_palette;
+            margin-top:0;
+        }
+        h2 {
+            @include gradient_palette;
+            font-family: tillana,cursive;
+            font: size 2em;
+        }
+        a {
+            @include a_position;
+        }
+
+    }
+}
