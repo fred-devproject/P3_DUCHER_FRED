@@ -1,0 +1,177 @@
+// Le chic a la française menu style //
+
+.chic {
+    @include card;
+        background:$background-chic;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+
+// menu title //
+    &__title {
+        @include gradient_chic;
+            font-family: "Croissant One";
+            font-size: 1.6em;
+            text-align: center;
+        @include responsive("small"){
+            font-size:2em;
+        }
+        @include responsive("medium"){
+            font-size:2.5em;
+        }
+        @include responsive("large"){
+            font-size:2.8em;
+        }
+    }
+  
+// menu starter undertitle //    
+    &__undertitlestart {
+        color:$chic-orange;
+        @include undertitle;
+            font-size:1em;
+            margin-right: 0.5em;
+            margin-left:0.5em;
+        @include responsive("medium"){
+            img {
+                width: 30%;
+            }
+        }
+    }
+
+// menu starter undertitle effect //
+    &__undertitlestart--lined {
+        @include lined-start;
+        @include responsive("small"){
+            font-size: 1.5em;
+        }
+        @include responsive("medium"){
+            font-size: 1.8em;
+        }
+        @include responsive("large"){
+            font-size:2em;
+        }
+    }
+  
+    &__undertitlestart--lined:hover {
+        background-size: 100% 100%;
+    } 
+
+// menu  main undertitle //
+    &__undertitlemain {
+        color:$chic-purple;
+        @include undertitle;
+            font-size:1em;
+            margin-right: 0.5em;
+            margin-left:0.5em;
+        @include responsive("medium"){
+            img {
+                width: 30%;
+            }
+        }
+    }
+  
+// menu main undertitle effect //
+    &__undertitlemain--lined {
+        @include lined-main;
+        @include responsive("small"){
+            font-size: 1.5em;
+        }
+        @include responsive("medium"){
+            font-size: 1.8em;
+        }
+        @include responsive("large"){
+            font-size:2em;
+        }
+    }
+  
+    &__undertitlemain--lined:hover {
+        background-size: 100% 100%;
+    } 
+  
+// menu dessert undertitle //
+    &__undertitledessert {
+        color:$chic-blue;
+        @include undertitle;
+            font-size:1em;
+            margin-right: 0.5em;
+            margin-left:0.5em;
+        @include responsive("medium"){
+            img {
+                width: 30%;
+            }
+        }
+    }
+  
+// menu dessert undertitle effect
+    &__undertitledessert--lined {
+        @include lined-dessert;
+        @include responsive("small"){
+            font-size: 1.5em;
+        }
+        @include responsive("medium"){
+            font-size: 1.8em;
+        }
+        @include responsive("large"){
+            font-size:2em;
+        }
+    }
+  
+    &__undertitledessert--lined:hover {
+        background-size: 100% 100%;
+    } 
+  
+    img {
+        width: 25%;
+    }
+  
+//starter list style //
+    &__starter{
+        @include list_style;
+        color: $chic-orange;
+        @include responsive("small"){
+            @include fontsmall;
+        }
+        @include responsive("medium"){
+            @include fontmid;
+        }
+        @include responsive("large"){
+            font-size: 1.5em;
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+  
+// main list style //
+    &__maincourse{
+        @include list_style;
+        color: $chic-purple;
+        @include responsive("small"){
+            @include fontsmall;
+        }
+        @include responsive("medium"){
+            @include fontmid;
+        }
+        @include responsive("large"){
+            font-size: 1.5em;
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+  
+// dessert list style //
+    &__dessert{
+        @include list_style;
+        color: $chic-blue;
+        @include responsive("small"){
+            @include fontsmall;
+        }
+        @include responsive("medium"){
+            @include fontmid;
+        }
+        @include responsive("large"){
+            font-size: 1.5em;
+            display:flex;
+            flex-wrap: wrap;
+        }
+    } 
+}
+  

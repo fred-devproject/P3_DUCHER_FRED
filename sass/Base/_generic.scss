@@ -1,0 +1,159 @@
+// generic stylesheet //
+
+
+// body margin //
+body {
+    margin: 0px;
+}
+
+// general link style //
+a {
+    text-decoration: none;
+  }
+
+// header style //  
+.head {
+    @include basic_color;
+        width: 100%;
+        height: 16vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    @include responsive("medium"){
+        height:12vmin;
+    }
+    @include responsive("large"){
+        height:12vmin;
+    }
+
+    h1 {
+        @include grow-title;
+    }
+
+    &__text {
+        @include basic_color;
+            font-family: roboto;
+            text-decoration: none;
+        @include responsive("small"){
+            font-family: roboto;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        @include responsive("medium"){
+            font-family: roboto;
+            text-decoration: none;
+            font-size: 1.8em;
+        }
+        @include responsive("large"){
+            font-family: roboto;
+            text-decoration: none;
+            font-size: 1.8em;
+        }
+    }
+}
+
+// footer style //
+.foot {
+    @include basic_color;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        bottom: 0;
+        justify-content: space-between;
+        width: 100%;
+        height: 12vmin;
+        margin-top: 2vmin;
+    @include responsive("small"){
+        height: 8vmin;
+    }
+    @include responsive("large"){
+        height:6vmin;
+    }
+
+    a:hover {
+        @include wiggle;
+    }
+
+    &__text {
+        @include basic_color;
+            font-family: roboto;
+            font-size: 1em;
+            padding: 0vmin 3vmin 0vmin 3vmin;
+        @include responsive("small"){
+            font-size: 1.2em;
+        }
+        @include responsive("medium"){
+            font-size: 1.5em;
+        }
+    }
+}
+
+// soon section style //
+.prochainement {
+    @include basic_color;
+        font-family: roboto;
+        border-radius: 5px;
+        width: 60%;
+        height: 2.5em;
+        margin: 0vmin auto 15vmin auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+    @include responsive("medium"){
+        width:50%;
+        height: 2.8em;
+        font-size: 1.5em;
+        margin: 0vmin auto 10vmin auto;
+    }
+    @include responsive("large"){
+        width:30%;
+        height: 2.4em;
+        margin: 10vmin auto 0vmin auto;
+    }
+  
+    &__point1 {
+        @include jump;
+    }
+  
+    &__point2 {
+        @include jump;
+        animation-delay: 300ms;
+    }
+  
+    &__point3 {
+        @include jump;
+        animation-delay: 600ms;
+    }
+  }
+
+// Restaurant h2 title style  on menu page //
+.lien__resto{
+    display:block;
+    text-align: center;
+    font-family: roboto;
+    font-size: 1em;
+    color:$darkgrey;
+    @include responsive("small"){
+      font-size:1.2em;
+    }
+    @include responsive("medium"){
+      font-size:1.4em;
+    }
+}
+
+// bulleted list style on menu page //
+.plat {
+    @include responsive("large"){
+      @include plat_large;
+    }
+  }
+  
+  .price {
+    @include price_style;
+    @include responsive("large"){
+      @include price_large;
+    }
+  }
+

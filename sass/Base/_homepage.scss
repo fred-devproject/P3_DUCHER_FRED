@@ -1,0 +1,203 @@
+// homepage style //
+
+
+// menu block style & grid layout for responsive //
+.menublock {
+    display: flex;
+    flex-direction: column;
+    @include responsive("medium"){
+      display:grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+    }
+    @include responsive("large"){
+      display:grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 100%;
+    }
+  
+  }
+
+// general style for menu card //
+.menu {
+    box-shadow: 0px 0px 8px 1px rgb(162, 165, 164);
+    border-radius: 5px;
+    width: 80%;
+    height: 120vmin;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @include responsive("medium"){
+        height: 60vmin;
+    }
+    @include responsive("large"){
+        height: 55vmin;
+    }
+
+// specific style for "La note enchantée" card //
+    &__note {
+        font-family: Devonshire, cursive;
+        border-radius: 5px;
+        height: 100%;
+        margin: auto;
+        background:$background-note;
+        align-items: center;
+
+        h3 {
+            @include color_note;
+                font-size: 2em;
+            @include responsive("small"){
+                font-size:2.8em;
+            }
+            @include responsive("medium"){
+                margin-top:1vmin;
+            }
+    }
+
+        h2 {
+            @include color_note;
+                font-family: tillana, cursive;
+                font-size: 2em;
+                font-weight: bold;
+            @include responsive("small"){
+                font-size:2.8em;
+            }
+        }
+
+        img {
+            width: 20%;
+            height: auto;
+            margin-top: 25vmin;
+            @include responsive("small"){
+                width:25%;
+                height: auto;
+            }
+            @include responsive("medium"){
+                margin-top: 10vmin;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height:100%;
+            @include grow-card;
+        }
+    }
+
+// specific style for "le chic à la francaise" card //
+    &__chic {
+        font-family: "Croissant One";
+        border-radius: 5px;
+        height: 100%;
+        margin: auto;
+        background: $background-chic;
+        position: relative;
+
+        h3 {
+            @include gradient_chic;
+                margin-top: 40vmin;
+                font-size: 1.6em;
+                padding: 0vmin 3vmin 0vmin 3vmin;
+            @include responsive("small"){
+                font-size:2em;
+            }
+            @include responsive("medium"){
+                margin-top: 20vmin;
+            }
+        }
+
+        h2 {
+            @include gradient_chic;
+                font-family: tillana, cursive;
+                font-size: 2em;
+                font-weight: bold;
+            @include responsive("small"){
+                font-size:2.8em;
+            }
+        }
+
+        a {
+            @include a_position;
+                
+        }
+    }
+
+// specific style for "le delice des papilles" card //
+    &__delice {
+        font-family: parisienne;
+        border-radius: 5px;
+        height: 100%;
+        margin: auto;
+        background: $background-delice;
+        position: relative;
+
+        h3 {
+            @include gradient_delice;
+                margin-top:40vmin;
+                font-size: 2em;
+                padding: 0vmin 3vmin 0vmin 3vmin;
+            @include responsive("small"){
+                font-size:2.4em;
+            }
+            @include responsive("medium"){
+                margin-top: 20vmin;
+        }
+    }
+
+        h2 {
+            @include gradient_delice;
+                font-family: tillana, cursive;
+                font-size: 2em;
+                font-weight: bold;
+            @include responsive("small"){
+                font-size:2.8em;
+            }
+        }
+
+        a {
+            @include a_position;
+                opacity: 1;
+        }
+    }
+
+// specific style for "la palette du gout" card //
+    &__palette {
+        font-family: "Kaushan script";
+        border-radius: 5px;
+        height: 100%;
+        margin: auto;
+        background:$background-pal;
+        position: relative;
+
+        h3 {
+            @include gradient_palette;
+                margin-top:40vmin;
+                font-size: 2em;
+                padding: 0vmin 3vmin 0vmin 3vmin;
+            @include responsive("small"){
+                font-size:2.4em;
+            }
+            @include responsive("medium"){
+                margin-top: 20vmin;
+            }
+        }
+
+        h2 {
+            @include gradient_palette;
+                font-family: tillana, cursive;
+                font-size: 2em;
+            @include responsive("small"){
+                font-size:2.8em;
+            }
+        }
+
+        a {
+        @include a_position;
+            opacity: 1;
+        }
+    }
+}
