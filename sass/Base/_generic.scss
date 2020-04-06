@@ -11,40 +11,47 @@ a {
     text-decoration: none;
   }
 
+h1 {
+    @include grow-title;
+}
+
 // header style //  
 .head {
+    width: 100%;
+    height: 16vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @include basic_color;
-        width: 100%;
-        height: 16vmin;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    @include responsive("medium"){
-        height:12vmin;
-    }
-    @include responsive("large"){
+        
+    @include responsive("medium") {
         height:12vmin;
     }
 
-    h1 {
-        @include grow-title;
+    @include responsive("large") {
+        height:12vmin;
     }
 
     &__text {
+        font-family: roboto;
+        text-decoration: none;
+
         @include basic_color;
-            font-family: roboto;
-            text-decoration: none;
-        @include responsive("small"){
+            
+        @include responsive("small") {
             font-family: roboto;
             text-decoration: none;
             font-size: 1.5em;
         }
-        @include responsive("medium"){
+
+        @include responsive("medium") {
             font-family: roboto;
             text-decoration: none;
             font-size: 1.8em;
         }
-        @include responsive("large"){
+
+        @include responsive("large") {
             font-family: roboto;
             text-decoration: none;
             font-size: 1.8em;
@@ -54,20 +61,23 @@ a {
 
 // footer style //
 .foot {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vmin;
+    margin-top: 2vmin;
+
     @include basic_color;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        position: fixed;
-        bottom: 0;
-        justify-content: space-between;
-        width: 100%;
-        height: 12vmin;
-        margin-top: 2vmin;
-    @include responsive("small"){
+        
+    @include responsive("small") {
         height: 8vmin;
     }
-    @include responsive("large"){
+
+    @include responsive("large") {
         height:6vmin;
     }
 
@@ -76,13 +86,16 @@ a {
     }
 
     &__text {
+        font-family: roboto;
+        font-size: 1em;
+        padding: 0vmin 3vmin 0vmin 3vmin;
+
         @include basic_color;
-            font-family: roboto;
-            font-size: 1em;
-            padding: 0vmin 3vmin 0vmin 3vmin;
-        @include responsive("small"){
+            
+        @include responsive("small") {
             font-size: 1.2em;
         }
+        
         @include responsive("medium"){
             font-size: 1.5em;
         }
