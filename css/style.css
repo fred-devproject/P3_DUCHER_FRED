@@ -532,7 +532,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .note {
-    width: 65%;
+    width: 70%;
   }
 }
 .note__title {
@@ -655,7 +655,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .palette {
-    width: 65%;
+    width: 70%;
   }
 }
 .palette__title {
@@ -763,7 +763,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .chic {
-    width: 65%;
+    width: 70%;
   }
 }
 .chic__title {
@@ -999,7 +999,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .delice {
-    width: 65%;
+    width: 70%;
   }
 }
 .delice__title {
@@ -1093,4 +1093,3 @@ a {
 }
 
 /*# sourceMappingURL=style.css.map */
-

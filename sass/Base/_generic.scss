@@ -13,16 +13,19 @@ a {
 
 // header style //  
 .head {
+    width: 100%;
+    height: 16vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @include basic_color;
-        width: 100%;
-        height: 16vmin;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    @include responsive("medium"){
+        
+    @include responsive("medium") {
         height:12vmin;
     }
-    @include responsive("large"){
+
+    @include responsive("large") {
         height:12vmin;
     }
 
@@ -31,20 +34,24 @@ a {
     }
 
     &__text {
+        font-family: roboto;
+        text-decoration: none;
+
         @include basic_color;
-            font-family: roboto;
-            text-decoration: none;
-        @include responsive("small"){
+            
+        @include responsive("small") {
             font-family: roboto;
             text-decoration: none;
             font-size: 1.5em;
         }
-        @include responsive("medium"){
+
+        @include responsive("medium") {
             font-family: roboto;
             text-decoration: none;
             font-size: 1.8em;
         }
-        @include responsive("large"){
+
+        @include responsive("large") {
             font-family: roboto;
             text-decoration: none;
             font-size: 1.8em;
@@ -54,20 +61,23 @@ a {
 
 // footer style //
 .foot {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vmin;
+    margin-top: 2vmin;
+
     @include basic_color;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        position: fixed;
-        bottom: 0;
-        justify-content: space-between;
-        width: 100%;
-        height: 12vmin;
-        margin-top: 2vmin;
-    @include responsive("small"){
+        
+    @include responsive("small") {
         height: 8vmin;
     }
-    @include responsive("large"){
+
+    @include responsive("large") {
         height:6vmin;
     }
 
@@ -76,14 +86,17 @@ a {
     }
 
     &__text {
+        font-family: roboto;
+        font-size: 1em;
+        padding: 0vmin 3vmin 0vmin 3vmin;
+
         @include basic_color;
-            font-family: roboto;
-            font-size: 1em;
-            padding: 0vmin 3vmin 0vmin 3vmin;
-        @include responsive("small"){
+            
+        @include responsive("small") {
             font-size: 1.2em;
         }
-        @include responsive("medium"){
+
+        @include responsive("medium") {
             font-size: 1.5em;
         }
     }
@@ -91,23 +104,26 @@ a {
 
 // soon section style //
 .prochainement {
+    font-family: roboto;
+    border-radius: 5px;
+    width: 60%;
+    height: 2.5em;
+    margin: 0vmin auto 15vmin auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+
     @include basic_color;
-        font-family: roboto;
-        border-radius: 5px;
-        width: 60%;
-        height: 2.5em;
-        margin: 0vmin auto 15vmin auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1em;
-    @include responsive("medium"){
+        
+    @include responsive("medium") {
         width:50%;
         height: 2.8em;
         font-size: 1.5em;
         margin: 0vmin auto 10vmin auto;
     }
-    @include responsive("large"){
+
+    @include responsive("large") {
         width:30%;
         height: 2.4em;
         margin: 10vmin auto 0vmin auto;
@@ -135,10 +151,12 @@ a {
     font-family: roboto;
     font-size: 1em;
     color:$darkgrey;
-    @include responsive("small"){
+
+    @include responsive("small") {
       font-size:1.2em;
     }
-    @include responsive("medium"){
+
+    @include responsive("medium") {
       font-size:1.4em;
     }
 }
@@ -146,15 +164,16 @@ a {
 // bulleted list style on menu page //
 .plat {
     @include responsive("large"){
-      @include plat_large;
+        @include plat_large;
     }
   }
   
-  .price {
+.price {
     @include price_style;
+
     @include responsive("large"){
-      @include price_large;
+         @include price_large;
     }
-  }
+}
 
 
