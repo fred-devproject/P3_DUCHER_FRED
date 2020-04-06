@@ -32,14 +32,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
+}
+h1:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
 .head {
-  background: #579c87ff;
-  color: #fdcb46ff;
   width: 100%;
   height: 16vmin;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #579c87ff;
+  color: #fdcb46ff;
 }
 @media screen and (min-width: 768px) {
   .head {
@@ -51,18 +60,11 @@ a {
     height: 12vmin;
   }
 }
-.head h1 {
-  transform: scale(1);
-  transition: transform 300ms ease-in-out;
-}
-.head h1:hover {
-  transform: scale(1.05);
-}
 .head__text {
-  background: #579c87ff;
-  color: #fdcb46ff;
   font-family: roboto;
   text-decoration: none;
+  background: #579c87ff;
+  color: #fdcb46ff;
 }
 @media screen and (min-width: 480px) {
   .head__text {
@@ -87,8 +89,6 @@ a {
 }
 
 .foot {
-  background: #579c87ff;
-  color: #fdcb46ff;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -98,6 +98,8 @@ a {
   width: 100%;
   height: 12vmin;
   margin-top: 2vmin;
+  background: #579c87ff;
+  color: #fdcb46ff;
 }
 @media screen and (min-width: 480px) {
   .foot {
@@ -114,11 +116,11 @@ a {
   animation-timing-function: linear;
 }
 .foot__text {
-  background: #579c87ff;
-  color: #fdcb46ff;
   font-family: roboto;
   font-size: 1em;
   padding: 0vmin 3vmin 0vmin 3vmin;
+  background: #579c87ff;
+  color: #fdcb46ff;
 }
 @media screen and (min-width: 480px) {
   .foot__text {
@@ -300,11 +302,11 @@ a {
   }
 }
 .menu__note h2 {
-  font-weight: 300;
-  color: #3d1319;
   font-family: tillana, cursive;
   font-size: 2em;
   font-weight: bold;
+  font-weight: 300;
+  color: #3d1319;
 }
 @media screen and (min-width: 480px) {
   .menu__note h2 {
@@ -349,14 +351,14 @@ a {
   position: relative;
 }
 .menu__chic h3 {
+  margin-top: 40vmin;
+  font-size: 1.6em;
+  padding: 0vmin 3vmin 0vmin 3vmin;
   color: #c77529;
   background: linear-gradient(to right, #c77529 0%, #6e4ccc 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 40vmin;
-  font-size: 1.6em;
-  padding: 0vmin 3vmin 0vmin 3vmin;
 }
 @media screen and (min-width: 480px) {
   .menu__chic h3 {
@@ -369,14 +371,14 @@ a {
   }
 }
 .menu__chic h2 {
+  font-family: tillana, cursive;
+  font-size: 2em;
+  font-weight: bold;
   color: #c77529;
   background: linear-gradient(to right, #c77529 0%, #6e4ccc 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: tillana, cursive;
-  font-size: 2em;
-  font-weight: bold;
 }
 @media screen and (min-width: 480px) {
   .menu__chic h2 {
@@ -407,14 +409,14 @@ a {
   position: relative;
 }
 .menu__delice h3 {
+  margin-top: 40vmin;
+  font-size: 2em;
+  padding: 0vmin 3vmin 0vmin 3vmin;
   color: #3a4fa2;
   background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 40vmin;
-  font-size: 2em;
-  padding: 0vmin 3vmin 0vmin 3vmin;
 }
 @media screen and (min-width: 480px) {
   .menu__delice h3 {
@@ -427,14 +429,14 @@ a {
   }
 }
 .menu__delice h2 {
+  font-family: tillana, cursive;
+  font-size: 2em;
+  font-weight: bold;
   color: #3a4fa2;
   background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: tillana, cursive;
-  font-size: 2em;
-  font-weight: bold;
 }
 @media screen and (min-width: 480px) {
   .menu__delice h2 {
@@ -466,14 +468,14 @@ a {
   position: relative;
 }
 .menu__palette h3 {
+  margin-top: 40vmin;
+  font-size: 2em;
+  padding: 0vmin 3vmin 0vmin 3vmin;
   color: #57a746;
   background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 40vmin;
-  font-size: 2em;
-  padding: 0vmin 3vmin 0vmin 3vmin;
 }
 @media screen and (min-width: 480px) {
   .menu__palette h3 {
@@ -486,13 +488,13 @@ a {
   }
 }
 .menu__palette h2 {
+  font-family: tillana, cursive;
+  font-size: 2em;
   color: #57a746;
   background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: tillana, cursive;
-  font-size: 2em;
 }
 @media screen and (min-width: 480px) {
   .menu__palette h2 {
@@ -519,7 +521,7 @@ a {
 .note {
   box-shadow: 0px 0px 8px 1px #a2a5a4;
   border-radius: 5px;
-  width: 80%;
+  width: 70%;
   padding: 1em 0em 1em 0em;
   margin-top: 2rem;
   margin-bottom: 5rem;
@@ -529,6 +531,9 @@ a {
   color: #3d1319;
   background: #f8e5e1;
   font-family: tillana, cursive;
+}
+.note img {
+  width: 20%;
 }
 @media screen and (min-width: 1200px) {
   .note {
@@ -562,9 +567,6 @@ a {
   align-items: center;
   text-align: center;
   font-size: 1.2em;
-}
-.note__undertitle img {
-  width: 25%;
 }
 .note__undertitle--lined {
   background: linear-gradient(to top, #3d1319 0%, #3d1319 5%, transparent 5.01%) no-repeat left bottom/0 100%;
@@ -643,7 +645,7 @@ a {
 .palette {
   box-shadow: 0px 0px 8px 1px #a2a5a4;
   border-radius: 5px;
-  width: 80%;
+  width: 70%;
   padding: 1em 0em 1em 0em;
   margin-top: 2rem;
   margin-bottom: 5rem;
@@ -657,68 +659,6 @@ a {
   .palette {
     width: 65%;
   }
-}
-.palette__title {
-  color: #57a746;
-  background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Kaushan script";
-  font-size: 2em;
-  text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .palette__title {
-    font-size: 2.5em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .palette__title {
-    font-size: 3em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .palette__title {
-    font-size: 3.5em;
-  }
-}
-.palette__undertitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  font-family: tillana, cursive;
-  font-size: 1em;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
-}
-@media screen and (min-width: 768px) {
-  .palette__undertitle img {
-    width: 30%;
-  }
-}
-.palette__undertitle--lined {
-  background: linear-gradient(to top, #57a746 0%, #57a746 5%, transparent 5.01%) no-repeat left bottom/0 100%;
-  transition: background-size 1000ms;
-}
-@media screen and (min-width: 480px) {
-  .palette__undertitle--lined {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .palette__undertitle--lined {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .palette__undertitle--lined {
-    font-size: 1.7em;
-  }
-}
-.palette__undertitle--lined:hover {
-  background-size: 100% 100%;
 }
 .palette img {
   width: 25%;
@@ -747,11 +687,73 @@ a {
     flex-wrap: wrap;
   }
 }
+.palette__title {
+  font-family: "Kaushan script";
+  font-size: 2em;
+  text-align: center;
+  color: #57a746;
+  background: linear-gradient(to right, #57a746 0%, #c2db76 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 480px) {
+  .palette__title {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .palette__title {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .palette__title {
+    font-size: 3.5em;
+  }
+}
+.palette__undertitle {
+  font-family: tillana, cursive;
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .palette__undertitle img {
+    width: 30%;
+  }
+}
+.palette__undertitle--lined {
+  background: linear-gradient(to top, #57a746 0%, #57a746 5%, transparent 5.01%) no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+}
+@media screen and (min-width: 480px) {
+  .palette__undertitle--lined {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .palette__undertitle--lined {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .palette__undertitle--lined {
+    font-size: 1.7em;
+  }
+}
+.palette__undertitle--lined:hover {
+  background-size: 100% 100%;
+}
 
 .chic {
   box-shadow: 0px 0px 8px 1px #a2a5a4;
   border-radius: 5px;
-  width: 80%;
+  width: 70%;
   padding: 1em 0em 1em 0em;
   margin-top: 2rem;
   margin-bottom: 5rem;
@@ -760,6 +762,9 @@ a {
   background: #fff5fe;
   font-family: "Times New Roman", Times, serif;
   font-size: 1em;
+}
+.chic img {
+  width: 25%;
 }
 @media screen and (min-width: 1200px) {
   .chic {
@@ -902,17 +907,14 @@ a {
 .chic__undertitledessert--lined:hover {
   background-size: 100% 100%;
 }
-.chic img {
-  width: 25%;
-}
 .chic__starter {
+  color: #c77529;
   list-style: none;
   text-align: center;
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 0px;
   font-style: italic;
-  color: #c77529;
 }
 @media screen and (min-width: 480px) {
   .chic__starter {
@@ -932,13 +934,13 @@ a {
   }
 }
 .chic__maincourse {
+  color: #a56799;
   list-style: none;
   text-align: center;
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 0px;
   font-style: italic;
-  color: #a56799;
 }
 @media screen and (min-width: 480px) {
   .chic__maincourse {
@@ -958,13 +960,13 @@ a {
   }
 }
 .chic__dessert {
+  color: #6e4ccc;
   list-style: none;
   text-align: center;
   margin-right: 10px;
   margin-left: 10px;
   padding-left: 0px;
   font-style: italic;
-  color: #6e4ccc;
 }
 @media screen and (min-width: 480px) {
   .chic__dessert {
@@ -987,7 +989,7 @@ a {
 .delice {
   box-shadow: 0px 0px 8px 1px #a2a5a4;
   border-radius: 5px;
-  width: 80%;
+  width: 70%;
   padding: 1em 0em 1em 0em;
   margin-top: 2rem;
   margin-bottom: 5rem;
@@ -1002,15 +1004,42 @@ a {
     width: 65%;
   }
 }
+.delice img {
+  width: 25%;
+}
+.delice ul {
+  list-style: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 0px;
+  font-style: italic;
+}
+@media screen and (min-width: 480px) {
+  .delice ul {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .delice ul {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .delice ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .delice__title {
+  font-family: parisienne;
+  font-size: 2em;
+  text-align: center;
   color: #3a4fa2;
   background: linear-gradient(to right, #3a4fa2 0%, #4e96d1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: parisienne;
-  font-size: 2em;
-  text-align: center;
 }
 @media screen and (min-width: 480px) {
   .delice__title {
@@ -1063,33 +1092,6 @@ a {
 }
 .delice__undertitle--lined:hover {
   background-size: 100% 100%;
-}
-.delice img {
-  width: 25%;
-}
-.delice ul {
-  list-style: none;
-  text-align: center;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding-left: 0px;
-  font-style: italic;
-}
-@media screen and (min-width: 480px) {
-  .delice ul {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .delice ul {
-    font-size: 1.3em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .delice ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
