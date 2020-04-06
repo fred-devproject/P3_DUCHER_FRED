@@ -1,12 +1,7 @@
 // La note enchantée menu style //
 
 .note {
-    img {
-        width: 20%;
-        }
-
     @include card;
-
     @include color_note;
         background:$background-note;
         font-family: tillana, cursive;
@@ -17,16 +12,13 @@
         font-family: devonshire,cursive;
         font-weight: 300;
         text-align: center;
-
-        @include responsive("small") {
+        @include responsive("small"){
             font-size:3.5em;
         }
-
-        @include responsive("medium") {
+        @include responsive("medium"){
             font-size:3.8em;
         }
-
-        @include responsive("large") {
+        @include responsive("large"){
             font-size:4.5em;
         }
     }
@@ -35,27 +27,29 @@
     &__undertitle {
         @include undertitle;
         font-size: 1.2em;
-
-// menu undertitle effect //
-        &--lined {
-            @include lined-note;
-
-            @include responsive("small") {
-                font-size: 1.5em;
-            }
-            @include responsive("medium") {
-                font-size: 1.8em;
-            }
-            @include responsive("large") {
-                font-size:2em;
-            }
+        img {
+        width: 25%;
         }
-
-        &--lined:hover {
-            background-size: 100% 100%;
-        }    
     }
-     
+  
+// menu undertitle effect //
+    &__undertitle--lined {
+        @include lined-note;
+        @include responsive("small"){
+            font-size: 1.5em;
+        }
+        @include responsive("medium"){
+            font-size: 1.8em;
+        }
+        @include responsive("large"){
+            font-size:2em;
+        }
+    }
+  
+    &__undertitle--lined:hover {
+        background-size: 100% 100%;
+    }
+  
 // music note pics //
     &__imgtop {
         width: 15%;
@@ -75,10 +69,8 @@
         font-size: 2em;
         font-weight: 300;
         font-family: devonshire, cursive;
-
         @include responsive("medium"){
             font-size: 2.2em;
-
             img {
                 width: 1.2em;
                 height: auto;
@@ -90,18 +82,15 @@
     ul {
         @include list_style;
             font-size: 1em;
-
-        @include responsive("small") {
+        @include responsive("small"){
             @include fontsmall;
         }
-
-        @include responsive("medium") {
+        @include responsive("medium"){
             @include fontmid;
         }
-
-        @include responsive("large") {
+        @include responsive("large"){
             display:flex;
             flex-wrap: wrap;
         }
     }
-}
+  }

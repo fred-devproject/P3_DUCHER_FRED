@@ -5,19 +5,18 @@
 .menublock {
     display: flex;
     flex-direction: column;
-
-    @include responsive("medium") {
+    @include responsive("medium"){
       display:grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 50% 50%;
     }
-
-    @include responsive("large") {
+    @include responsive("large"){
       display:grid;
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 100%;
     }
-}
+  
+  }
 
 // general style for menu card //
 .menu {
@@ -30,12 +29,10 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
-    @include responsive("medium") {
+    @include responsive("medium"){
         height: 60vmin;
     }
-
-    @include responsive("large") {
+    @include responsive("large"){
         height: 55vmin;
     }
 
@@ -51,24 +48,20 @@
         h3 {
             @include color_note;
                 font-size: 2em;
-
-            @include responsive("small") {
+            @include responsive("small"){
                 font-size:2.8em;
             }
-
-            @include responsive("medium") {
+            @include responsive("medium"){
                 margin-top:1vmin;
             }
-        }
+    }
 
         h2 {
-            font-family: tillana, cursive;
-            font-size: 2em;
-            font-weight: bold;
-
             @include color_note;
-                
-            @include responsive("small") {
+                font-family: tillana, cursive;
+                font-size: 2em;
+                font-weight: bold;
+            @include responsive("small"){
                 font-size:2.8em;
             }
         }
@@ -77,13 +70,11 @@
             width: 20%;
             height: auto;
             margin-top: 25vmin;
-
-            @include responsive("small") {
+            @include responsive("small"){
                 width:25%;
                 height: auto;
             }
-
-            @include responsive("medium") {
+            @include responsive("medium"){
                 margin-top: 10vmin;
             }
         }
@@ -93,7 +84,6 @@
             display: block;
             width: 100%;
             height:100%;
-
             @include grow-card;
         }
     }
@@ -108,29 +98,24 @@
         position: relative;
 
         h3 {
-            margin-top: 40vmin;
-            font-size: 1.6em;
-            padding: 0vmin 3vmin 0vmin 3vmin;
-
             @include gradient_chic;
-                
-            @include responsive("small") {
+                margin-top: 40vmin;
+                font-size: 1.6em;
+                padding: 0vmin 3vmin 0vmin 3vmin;
+            @include responsive("small"){
                 font-size:2em;
             }
-
-            @include responsive("medium") {
+            @include responsive("medium"){
                 margin-top: 20vmin;
             }
         }
 
         h2 {
-            font-family: tillana, cursive;
-            font-size: 2em;
-            font-weight: bold;
-
             @include gradient_chic;
-                
-            @include responsive("small") {
+                font-family: tillana, cursive;
+                font-size: 2em;
+                font-weight: bold;
+            @include responsive("small"){
                 font-size:2.8em;
             }
         }
@@ -151,29 +136,24 @@
         position: relative;
 
         h3 {
-            margin-top:40vmin;
-            font-size: 2em;
-            padding: 0vmin 3vmin 0vmin 3vmin;
-
             @include gradient_delice;
-                
-            @include responsive("small") {
+                margin-top:40vmin;
+                font-size: 2em;
+                padding: 0vmin 3vmin 0vmin 3vmin;
+            @include responsive("small"){
                 font-size:2.4em;
             }
-
-            @include responsive("medium") {
+            @include responsive("medium"){
                 margin-top: 20vmin;
-            }
         }
+    }
 
         h2 {
-            font-family: tillana, cursive;
-            font-size: 2em;
-            font-weight: bold;
-
             @include gradient_delice;
-                
-            @include responsive("small") {
+                font-family: tillana, cursive;
+                font-size: 2em;
+                font-weight: bold;
+            @include responsive("small"){
                 font-size:2.8em;
             }
         }
@@ -194,28 +174,23 @@
         position: relative;
 
         h3 {
-            margin-top:40vmin;
-            font-size: 2em;
-            padding: 0vmin 3vmin 0vmin 3vmin;
-
             @include gradient_palette;
-                
-            @include responsive("small") {
+                margin-top:40vmin;
+                font-size: 2em;
+                padding: 0vmin 3vmin 0vmin 3vmin;
+            @include responsive("small"){
                 font-size:2.4em;
             }
-
-            @include responsive("medium") {
+            @include responsive("medium"){
                 margin-top: 20vmin;
             }
         }
 
         h2 {
-            font-family: tillana, cursive;
-            font-size: 2em;
-
             @include gradient_palette;
-                
-            @include responsive("small") {
+                font-family: tillana, cursive;
+                font-size: 2em;
+            @include responsive("small"){
                 font-size:2.8em;
             }
         }
